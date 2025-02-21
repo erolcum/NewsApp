@@ -1,0 +1,83 @@
+object Form1: TForm1
+  Left = 262
+  Height = 360
+  Top = 250
+  Width = 408
+  Caption = 'News'
+  ClientHeight = 360
+  ClientWidth = 408
+  OnClose = FormClose
+  OnCreate = FormCreate
+  object btAdd: TButton
+    Left = 16
+    Height = 25
+    Top = 110
+    Width = 75
+    Caption = 'Add'
+    TabOrder = 0
+    OnClick = btAddClick
+  end
+  object btShowAll: TButton
+    Left = 104
+    Height = 25
+    Top = 110
+    Width = 75
+    Caption = 'Show All'
+    TabOrder = 1
+    OnClick = btShowAllClick
+  end
+  object btSearch: TButton
+    Left = 192
+    Height = 25
+    Top = 110
+    Width = 75
+    Caption = 'Search'
+    TabOrder = 2
+    OnClick = btSearchClick
+  end
+  object cbType: TComboBox
+    Left = 104
+    Height = 23
+    Top = 16
+    Width = 112
+    ItemHeight = 15
+    ItemIndex = 1
+    Items.Strings = (
+      'Foreign'
+      'General'
+      'Magazine'
+      'Weather'
+    )
+    TabOrder = 3
+    Text = 'General'
+  end
+  object edTitle: TEdit
+    Left = 16
+    Height = 23
+    Top = 78
+    Width = 320
+    TabOrder = 4
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 202
+    Top = 144
+    Width = 376
+    ScrollBars = ssBoth
+    TabOrder = 5
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 23
+    Width = 56
+    Caption = 'News Type'
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 54
+    Width = 22
+    Caption = 'Title'
+  end
+end
